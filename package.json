@@ -2,17 +2,12 @@
   "name": "timer",
   "version": "1.0.0",
   "description": "timer",
-  "homepage": "https://gracgc.github.io/Timer/",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client:install": "npm run install --prefix client",
-    "client:build": "npm run build --prefix client",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run client\" \"npm run server\" ",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "concurrently \"npm run client\" \"npm run server\" "
   },
   "author": "gracgc <grac.tu@yandex.ru>",
   "license": "ISC",
